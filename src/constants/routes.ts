@@ -5,4 +5,7 @@ export const ROUTE = {
   user: "/user/",
   admin: "/admin/",
   cart: "/cart/",
+  userAccount: "/account",
+  userOrder: "/account/order",
+  userAddress: "/account/address",
 };

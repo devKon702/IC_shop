@@ -8,6 +8,11 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import RegisterForm from "@/components/forms/register-form";
 import { ROUTE } from "@/constants/routes";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 
 export default function Header() {
   return (
@@ -23,7 +28,7 @@ export default function Header() {
           <i className="bx bxs-cart text-4xl"></i>
           <p className="text-sm text-nowrap">Giỏ hàng</p>
         </Link>
-        <Dialog>
+        {/* <Dialog>
           <DialogTrigger>
             <div className="cursor-pointer text-center">
               <i className="bx bxs-user-circle text-4xl"></i>
@@ -60,7 +65,21 @@ export default function Header() {
               </TabsContent>
             </Tabs>
           </DialogContent>
-        </Dialog>
+        </Dialog> */}
+        <HoverCard openDelay={0} closeDelay={20}>
+          <HoverCardTrigger>
+            <div className="cursor-pointer text-center">
+              <i className="bx bxs-user-circle text-4xl"></i>
+              <p className="text-sm text-nowrap">Nguyễn Kha</p>
+            </div>
+          </HoverCardTrigger>
+
+          <HoverCardContent side="left">
+            <ul>
+              <Link href={ROUTE.userAccount}>Tài khoản của tôi</Link>
+            </ul>
+          </HoverCardContent>
+        </HoverCard>
       </div>
     </div>
   );
