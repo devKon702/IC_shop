@@ -38,7 +38,7 @@ export default function CategoryBar({
                   className="flex flex-col space-y-2 border-l-2 px-2"
                 >
                   <Link
-                    href={`${ROUTE.category}ram`}
+                    href={`${ROUTE.category}/ram`}
                     className="cursor-pointer text-primary"
                   >
                     {value.category}

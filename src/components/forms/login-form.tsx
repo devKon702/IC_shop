@@ -29,7 +29,7 @@ const formSchema = z.object({
 });
 
 export default function LoginForm() {
-  const { setAuthMode } = useGlobalContext();
+  const { setAuthMode, setUser } = useGlobalContext();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -118,7 +118,10 @@ export default function LoginForm() {
         </p>
         <button
           className="bg-black text-white rounded-sm px-4 py-2 cursor-pointer opacity-80 hover:opacity-100 ms-auto block"
-          onClick={() => {}}
+          onClick={() => {
+            setUser("Nhật Kha");
+            setAuthMode(null);
+          }}
         >
           Đăng nhập
         </button>

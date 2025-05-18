@@ -1,3 +1,4 @@
+import AuthModal from "@/components/features/auth/auth-modal";
 import FloatButton from "@/components/features/contact/float-button";
 import CategoryBar from "@/components/layouts/category-bar";
 import Footer from "@/components/layouts/footer";
@@ -9,13 +10,14 @@ import React, { ReactNode } from "react";
 export default function MainLayout({ children }: { children: ReactNode }) {
   return (
     <GlobalProvider>
-      <div>
+      <>
         <Header></Header>
         <CategoryBar categories={mockProductCatergory}></CategoryBar>
         <div className="mx-24 py-4">{children}</div>
         <Footer></Footer>
         <FloatButton></FloatButton>
-      </div>
+        <AuthModal></AuthModal>
+      </>
     </GlobalProvider>
   );
 }
