@@ -7,6 +7,7 @@ interface InputProps {
   icon?: React.ReactElement;
   placeholder?: string;
   isError: boolean;
+  disable?: boolean;
 }
 
 export default function Input({
@@ -15,6 +16,7 @@ export default function Input({
   icon,
   placeholder,
   isError,
+  disable = false,
   ...otherProps
 }: InputProps) {
   return (
@@ -28,6 +30,7 @@ export default function Input({
         type={type}
         className={cn("outline-none border-none flex-1 p-2", className)}
         placeholder={placeholder}
+        disabled={disable}
         {...otherProps}
       />
       {isError && <i className="bx bx-error-circle text-red-400 px-2"></i>}
