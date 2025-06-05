@@ -36,7 +36,7 @@ export default function AccountLayout({
           </Link>
         ))}
       </div>
-      <div className="flex-1 bg-white p-2 shadow-xl rounded-md">
+      <div className="flex-1 bg-white py-2 px-4 shadow-xl rounded-md min-h-96">
         <Suspense fallback={<p>Loading</p>}>{children}</Suspense>
       </div>
     </div>

@@ -3,7 +3,7 @@ import LoginForm from "@/components/forms/login-form";
 import RegisterForm from "@/components/forms/register-form";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useGlobalContext } from "@/libs/contexts/GlobalContext";
+import { useGlobalContext } from "@/libs/client/contexts/GlobalContext";
 import React from "react";
 
 export default function AuthModal() {

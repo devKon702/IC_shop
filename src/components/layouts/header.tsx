@@ -9,7 +9,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import { useGlobalContext } from "@/libs/contexts/GlobalContext";
+import { useGlobalContext } from "@/libs/client/contexts/GlobalContext";
 
 const accountMenu = [
   { icon: "bx bx-user", title: "Tài khoản của tôi", href: ROUTE.userAccount },

@@ -1,5 +1,5 @@
 import AccountForm from "@/components/forms/account-form";
-import React, { Suspense } from "react";
+import React from "react";
 
 export default function AccountPage() {
   return (

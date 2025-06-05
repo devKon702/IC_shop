@@ -1,5 +1,5 @@
 "use client";
-import useDebounce from "@/libs/hooks/useDebouce";
+import useDebounce from "@/libs/client/hooks/useDebouce";
 import React, { useEffect, useRef, useState } from "react";
 
 type SearchInputProps = {

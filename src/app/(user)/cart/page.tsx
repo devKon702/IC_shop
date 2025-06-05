@@ -1,7 +1,7 @@
 import CartHeader from "@/components/features/cart/cart-header";
 import CartList from "@/components/features/cart/cart-list";
 import CartSummary from "@/components/features/cart/cart-summary";
-import CartProvider from "@/libs/contexts/CartContext";
+import CartProvider from "@/libs/client/contexts/CartContext";
 import React from "react";
 
 export default function CartPage() {

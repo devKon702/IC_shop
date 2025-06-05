@@ -12,7 +12,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import Input from "@/components/common/input";
-import { useGlobalContext } from "@/libs/contexts/GlobalContext";
+import { useGlobalContext } from "@/libs/client/contexts/GlobalContext";
 import SendToEmailForm from "@/components/forms/send-to-email-form";
 import {
   Dialog,

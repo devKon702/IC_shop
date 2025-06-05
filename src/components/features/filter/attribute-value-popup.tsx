@@ -1,6 +1,6 @@
 "use client";
-import { useFilter } from "@/libs/hooks/useFilter";
-import { useToggleSelect } from "@/libs/hooks/useToggleSelect";
+import { useFilter } from "@/libs/client/hooks/useFilter";
+import { useToggleSelect } from "@/libs/client/hooks/useToggleSelect";
 import React from "react";
 
 const attrArray = ["8GB", "16GB", "12GB"];
